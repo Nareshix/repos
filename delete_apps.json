@@ -1,0 +1,5 @@
+{
+    "codium": ["sudo rm /usr/share/keyrings/vscodium-archive-keyring.gpg",
+                "sudo rm /etc/apt/sources.list.d/vscodium.list",
+                "sudo apt purge codium"]
+}
