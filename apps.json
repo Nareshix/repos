@@ -19,6 +19,16 @@
       "categories": ["dev", "editor"],
       "symlink": "nvim",
       "description": "Vim-fork focused on extensibility and usability"
+    },
+
+    "broot": {
+      "official_ppa": false,
+      "version": "1.44.7",
+      "download": "https://dystroy.org/broot/download/x86_64-linux/",
+      "bin_path": "",
+      "categories": ["dev", "file manager"],
+      "symlink": "br",
+      "description": "A better way to navigate directories"
     }
 
   }
