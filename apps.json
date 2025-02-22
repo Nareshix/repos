@@ -27,7 +27,7 @@
       "download": "https://dystroy.org/broot/download/x86_64-linux/broot",
       "bin_path": "broot",
       "categories": ["dev", "file manager"],
-      "symlink": "br",
+      "symlink": "broot",
       "description": "A better way to navigate directories"
     }
 
