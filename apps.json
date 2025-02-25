@@ -1,6 +1,6 @@
 {
   
-    "vscodium/vscodium": { 
+    "vscodium": { 
       "official_ppa": true,
       "download": "https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb", 
       "categories": ["dev", "editor"],
@@ -9,7 +9,7 @@
       
     },
 
-    "neovim/neovim": {
+    "neovim": {
       "official_ppa": false,
       "version": "v0.10.4",
       "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
@@ -21,7 +21,7 @@
       "notes": ""
     },
 
-    "junegunn/fzf": {
+    "fzf": {
       "official_ppa": false,
       "version": "1.44.7",
       "download": "https://dystroy.org/broot/download/x86_64-linux/broot",
