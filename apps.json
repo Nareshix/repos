@@ -1,33 +1,33 @@
 {
   
-    "codium": { 
+    "vscodium/vscodium": { 
       "official_ppa": true,
-      "download": ["wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg| gpg --dearmor| sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg",
-                   "echo 'deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://download.vscodium.com/debs vscodium main'| sudo tee /etc/apt/sources.list.d/vscodium.list",
-                   "sudo apt update && sudo apt install codium"], 
+      "download": "https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb", 
       "categories": ["dev", "editor"],
       "symlink": "codium", 
       "description": "Binary release of VS Code without MS branding/telemetry/licensing"
       
     },
 
-    "nvim": {
+    "neovim/neovim": {
       "official_ppa": false,
-      "version": "0.10.4",
+      "version": "v0.10.4",
       "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
       "bin_path": "bin/nvim",
+      "identify_download_link": "" ,
       "categories": ["dev", "editor"],
       "symlink": "nvim",
-      "description": "Vim-fork focused on extensibility and usability"
+      "description": "Vim-fork focused on extensibility and usability",
+      "notes": ""
     },
 
-    "broot": {
+    "junegunn/fzf": {
       "official_ppa": false,
       "version": "1.44.7",
       "download": "https://dystroy.org/broot/download/x86_64-linux/broot",
       "bin_path": "broot",
       "categories": ["dev", "file manager"],
-      "symlink": "broot",
+      "symlink": "brootn",
       "description": "A better way to navigate directories"
     }
 
