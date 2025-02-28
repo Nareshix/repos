@@ -13,7 +13,7 @@
       "official_ppa": false,
       "version": "v0.10.4",
       "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
-      "bin_path": "bin/nvim",
+      "bin_path": "nvim-linux-x86_64/bin/nvim",
       "identify_download_link": "" ,
       "categories": ["dev", "editor"],
       "symlink": "nvim",
