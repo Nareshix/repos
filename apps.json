@@ -1,7 +1,7 @@
 {
   
     "vscodium": { 
-      "official_ppa": true,
+      "auto_download": false,
       "download": "https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb", 
       "categories": ["dev", "editor"],
       "symlink": "codium", 
@@ -10,7 +10,7 @@
     },
 
     "neovim": {
-      "official_ppa": false,
+      "auto_download": false,
       "version": "v0.10.4",
       "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
       "bin_path": "nvim-linux-x86_64/bin/nvim",
@@ -22,7 +22,7 @@
     },
 
     "fzf": {
-      "official_ppa": false,
+      "auto_download": false,
       "version": "1.44.7",
       "download": "https://github.com/junegunn/fzf/releases/download/v0.60.1/fzf-0.60.1-linux_amd64.tar.gz",
       "bin_path": "fzf",
@@ -32,21 +32,20 @@
     },
     
       "kitty":{
-        "download": [
-        "# Create symbolic links to add kitty and kitten to PATH (assuming ~/.local/bin is in",
-        "# your system-wide PATH)",
-        "ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten ~/.local/bin/",
-        "# Place the kitty.desktop file somewhere it can be found by the OS",
-        "cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/",
-        "# If you want to open text files and images in kitty via your file manager also add the kitty-open.desktop file",
-        "cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/",
-        "# Update the paths to the kitty and its icon in the kitty desktop file(s)",
-        "sed -i \"s|Icon=kitty|Icon=$(readlink -f ~)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g\" ~/.local/share/applications/kitty*.desktop",
-        "sed -i \"s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g\" ~/.local/share/applications/kitty*.desktop",
-        "# Make xdg-terminal-exec (and hence desktop environments that support it use kitty)",
-        "echo 'kitty.desktop' > ~/.config/xdg-terminals.list"
-      ]
+        "auto_download": true,
+        "download": ["curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin",
+                    "# Create symbolic links to add kitty and kitten to PATH (assuming ~/.local/bin is in",
+                    "# your system-wide PATH)",
+                    "ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten ~/.local/bin/",
+                    "# Place the kitty.desktop file somewhere it can be found by the OS",
+                    "cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/",
+                    "# If you want to open text files and images in kitty via your file manager also add the kitty-open.desktop file",
+                    "cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/",
+                    "# Update the paths to the kitty and its icon in the kitty desktop file(s)",
+                    "sed -i \"s|Icon=kitty|Icon=$(readlink -f ~)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g\" ~/.local/share/applications/kitty*.desktop",
+                    "sed -i \"s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g\" ~/.local/share/applications/kitty*.desktop",
+                    "# Make xdg-terminal-exec (and hence desktop environments that support it use kitty)",
+                    "echo 'kitty.desktop' > ~/.config/xdg-terminals.list"]
     
-
   }
 }
