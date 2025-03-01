@@ -5,11 +5,11 @@
         "auto_download": false,
         "version": "1.97.2.25045",
         "download": "https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb",
+        "delete": "sudo apt purge codium",
         "categories": [
             "dev",
             "editor"
         ],
-        "symlink": "codium",
         "description": "Binary release of VS Code without MS branding/telemetry/licensing"
     },
     "neovim": {
@@ -19,6 +19,7 @@
         "version_in_download_link": false,
         "version": "v0.10.4",
         "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
+        "delete": "sudo rm -rf /opt/nvim-linux-x86_64/ /usr/local/bin/nvim",
         "bin_path": "nvim-linux-x86_64/bin/nvim",
         "categories": [
             "dev",
@@ -35,12 +36,13 @@
         "version_in_download_link": true,
         "version": "v0.60.2",
         "download": "https://github.com/junegunn/fzf/releases/download/v0.60.2/fzf-0.60.2-linux_amd64.tar.gz",
+        "delete": "sudo rm -rf /opt/fzf /usr/local/bin/fzf",
         "bin_path": "fzf",
         "categories": [
             "dev",
             "file manager"
         ],
-        "symlink": "/usr/local/bin/fzf",
+        "symlink": "/usr/i mean wht to do local/bin/fzf",
         "description": "A better way to navigate directories"
     },
     "kitty": {
@@ -58,4 +60,5 @@
         "version_in_download_link": false,
         "download": "https://dystroy.org/broot/download/x86_64-linux/broot"
     }
+    
 }
