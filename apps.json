@@ -24,10 +24,10 @@
     "fzf": {
       "official_ppa": false,
       "version": "1.44.7",
-      "download": "https://dystroy.org/broot/download/x86_64-linux/broot",
-      "bin_path": "broot",
+      "download": "https://github.com/junegunn/fzf/releases/download/v0.60.1/fzf-0.60.1-linux_amd64.tar.gz",
+      "bin_path": "fzf",
       "categories": ["dev", "file manager"],
-      "symlink": "brootn",
+      "symlink": "/usr/local/bin/fzf",
       "description": "A better way to navigate directories"
     }
 
