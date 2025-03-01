@@ -6,7 +6,7 @@ import json
 import pathlib
 from google import genai
 
-GITHUB_API_KEY = "API"
+GITHUB_API_KEY = "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"
 client = genai.Client(api_key="AIzaSyAUq_ZTk_bm0k9dmGLZERlAMVCmrO7qISc")
 
 
@@ -22,7 +22,7 @@ def filter_download_link(response):
         ]
     )
     download_link = response.text
-    return download_link.strip()
+    return download_link.strip
 
 
 
