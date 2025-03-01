@@ -16,7 +16,7 @@
       "bin_path": "nvim-linux-x86_64/bin/nvim",
       "identify_download_link": "" ,
       "categories": ["dev", "editor"],
-      "symlink": "nvim",
+      "symlink": "/usr/local/bin/nvim",
       "description": "Vim-fork focused on extensibility and usability",
       "notes": ""
     },
