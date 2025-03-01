@@ -6,7 +6,7 @@ import json
 import pathlib
 from google import genai
 
-GITHUB_API_KEY = "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"
+GITHUB_API_KEY = "API"
 client = genai.Client(api_key="AIzaSyAUq_ZTk_bm0k9dmGLZERlAMVCmrO7qISc")
 
 
