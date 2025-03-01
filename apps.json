@@ -11,10 +11,10 @@
 
     "neovim": {
       "auto_download": false,
+      "version_in_download_link": false,
       "version": "v0.10.4",
-      "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
+      "download": "https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz",
       "bin_path": "nvim-linux-x86_64/bin/nvim",
-      "identify_download_link": "" ,
       "categories": ["dev", "editor"],
       "symlink": "/usr/local/bin/nvim",
       "description": "Vim-fork focused on extensibility and usability",
@@ -23,6 +23,7 @@
 
     "fzf": {
       "auto_download": false,
+      "version_in_download_link": true,
       "version": "1.44.7",
       "download": "https://github.com/junegunn/fzf/releases/download/v0.60.1/fzf-0.60.1-linux_amd64.tar.gz",
       "bin_path": "fzf",
@@ -34,5 +35,11 @@
       "kitty":{
         "auto_download": true,
         "download": "curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin && ln -sf ~/.local/kitty.app/bin/kitty ~/.local/kitty.app/bin/kitten ~/.local/bin/ && cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/ && cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/ && sed -i \"s|Icon=kitty|Icon=$(readlink -f ~)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g\" ~/.local/share/applications/kitty*.desktop && sed -i \"s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g\" ~/.local/share/applications/kitty*.desktop && echo 'kitty.desktop' > ~/.config/xdg-terminals.list"   
-  }
+  },
+      "broot":{
+        "auto_download": false, 
+        "version_in_download_link": false,
+        "download": "https://dystroy.org/broot/download/x86_64-linux/broot"
+      }
+    
 }
