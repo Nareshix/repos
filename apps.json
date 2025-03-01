@@ -31,7 +31,7 @@
       "description": "A better way to navigate directories"
     },
     
-      "kitty"{
+      "kitty":{
         "download": [
         "# Create symbolic links to add kitty and kitten to PATH (assuming ~/.local/bin is in",
         "# your system-wide PATH)",
