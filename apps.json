@@ -18,7 +18,7 @@
         "auto_download": false,
         "version_in_download_link": false,
         "version": "v0.10.4",
-        "download": "https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz",
+        "download": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
         "bin_path": "nvim-linux-x86_64/bin/nvim",
         "categories": [
             "dev",
@@ -34,7 +34,7 @@
         "auto_download": false,
         "version_in_download_link": true,
         "version": "v0.60.2",
-        "download": "https://github.com/junegunn/fzf/releases/download/v0.60.1/fzf-0.60.1-linux_amd64.tar.gz",
+        "download": "https://github.com/junegunn/fzf/releases/download/v0.60.2/fzf-0.60.2-linux_amd64.tar.gz",
         "bin_path": "fzf",
         "categories": [
             "dev",
